@@ -3,6 +3,7 @@ body {
     display: wrap;
     text-align: center;
     margin-top: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .div-container {
@@ -85,3 +86,49 @@ body {
     margin-left: 20px;
     color: grey;
 }
+
+/* Mobile styles - 375px and below */
+@media (max-width: 375px) {
+    .div-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .background-img {
+      max-width: 100%;
+    }
+  
+    .heading {
+      width: 80%;
+      margin: auto;
+      font-size: 1rem;
+    }
+  
+    .text-content,
+    .author-name {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .author-info {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  /* Desktop styles - 1440px and above */
+  @media (min-width: 1440px) {
+    .div-container {
+      width: 30%;
+    }
+  
+    .heading {
+      width: 25%;
+      font-size: 1.2rem;
+    }
+  
+    .text-content {
+      font-size: 1rem;
+    }
+  }
+  
